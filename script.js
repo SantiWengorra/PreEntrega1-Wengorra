@@ -49,5 +49,5 @@ while (isNaN(numero2)) {
     numero2 = prompt("Ingrese el segundo número");
 }
 
-alert (("El resultado es: ", Cuenta(numero1, numero2)));
+alert (("El resultado es: "+ Cuenta(numero1, numero2)));
 }

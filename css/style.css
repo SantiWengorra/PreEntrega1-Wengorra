@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(46, 43, 43);
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6rem;
+    margin-top: 300px;
+    margin-inline: 300px;
+    color: rgb(203, 164, 21);
+    border: 1px solid rgb(203, 164, 21);
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: -7px -13px 30px rgb(0, 0, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+h1:hover {
+    color: rgb(46, 43, 43);
+    background-color: rgb(203, 164, 21);
+    transition: 0.5s;
+}
+
+p {
+    text-align: center;
+    font-size: 1rem;
+    margin: 20px;
+    color: white;
+    text-decoration: underline;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+    margin-inline: 100px;
+    margin-top: 70px;
+    font-size: 10rem;
+    color: rgb(160, 160, 160);
+    text-align: center;
+    text-shadow: -7px -13px 30px rgb(0, 0, 0);
+}
+
+h2:hover {
+    transition: 0.5s;
+    animation-name: salto;
+    animation-iteration-count: initial;
+    animation-duration: 0.7s;
+}
+
+@keyframes salto {
+    0% {
+      transform: translateY(0) rotate(0);
+      border-radius: 40px;
+    }
+    33% {
+      transform: translateY(-100px) rotate(180deg);
+      border-radius: 100%;
+    }
+    100% {
+      transform: translateY(0) rotate(360deg);
+      border-radius: 40px;
+    }
+  }
+
+footer {
+    color: rgb(255, 255, 255);
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 135px;
+    box-shadow: inset 0px 13px 40px rgb(46, 43, 43);
+}
+
+footer h3 {
+   background-color: rgb(32, 32, 32);
+}
+
+  ::selection {
+    color: white;
+    background-color: rgb(203, 164, 21);
+  }

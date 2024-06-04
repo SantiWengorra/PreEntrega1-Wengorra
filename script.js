@@ -8,18 +8,16 @@ function Cuenta(num1, num2) {
     }
     if (type === "suma" || type === "+") {
         let resultado = num1 + num2;
-        alert("El resultado es: " + resultado);
+        return resultado;
     } else if (type === "resta" || type === "-") {
         let resultado = num1 - num2;
-        alert("El resultado es: " + resultado);
+        return resultado;
     } else if (type === "multiplicacion" || type === "*") {
         let resultado = num1 * num2;
-        alert("El resultado es: " + resultado);
+        return resultado;
     } else if (type === "division" || type === "/") {
         let resultado = num1 / num2;
-        alert("El resultado es: " + resultado);
-    } else {
-        alert("Tipo de cuenta incorrecto");
+        return resultado;
     }
 }
 
@@ -51,5 +49,5 @@ while (isNaN(numero2)) {
     numero2 = prompt("Ingrese el segundo número");
 }
 
-Cuenta(numero1, numero2);
+alert (("El resultado es: ", Cuenta(numero1, numero2)));
 }
